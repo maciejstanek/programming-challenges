@@ -61,6 +61,7 @@ void encryptStdStreamOnTheFly(unsigned int *key) {
     fprintf(stderr, "(0x%08x, 0x%08x) -> ", value[0], value[1]);
     encryptTwoValues(value, key);
     fprintf(stderr, "(0x%08x, 0x%08x)\n", value[0], value[1]);
+    printf("%08x%08x", value[0], value[1]);
   }
   free(value);
 }
