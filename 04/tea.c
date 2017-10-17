@@ -43,7 +43,7 @@ void encryptTwoValues(unsigned int *value, unsigned int* key) {
 void encryptStdStreamOnTheFly(unsigned int *key) {
   char inputChar;
   bool endOfFile = false;
-  unsigned int *value = malloc(2 * sizeof(int));
+  unsigned int value[2];
   while(!endOfFile) {
     int i = 0;
     for(; i < 2 * sizeof(int); i++) {
@@ -63,7 +63,6 @@ void encryptStdStreamOnTheFly(unsigned int *key) {
     fprintf(stderr, "(0x%08x, 0x%08x)\n", value[0], value[1]);
     printf("%08x%08x", value[0], value[1]);
   }
-  free(value);
 }
 
 unsigned int *parseKey(char *rawKey) {
@@ -112,10 +111,87 @@ int parseArgs(int argc, char **argv) {
   return 0;
 }
 
+bool isHexChar(unsigned char c) {
+  if(c >= 'A' && c <= 'F') {
+    return true;
+  }
+  if(c >= 'a' && c <= 'f') {
+    return true;
+  }
+  if(c >= '0' && c <= '9') {
+    return true;
+  }
+  return false;
+}
+
+void decryptTwoValues(unsigned int *value, unsigned int* key) {
+  return; // TODO
+  // This is where raw encryption takes place.
+  unsigned int sum = 0;
+  unsigned int delta = 0x9e3779b9;
+  for(int i = 0; i < 32; i++) {
+    value[0] += ((value[1] << 4) + key[0]) ^ (value[1] + sum) ^ ((value[1] >> 5) + key[1]);
+    value[1] += ((value[0] << 4) + key[2]) ^ (value[0] + sum) ^ ((value[0] >> 5) + key[3]);
+  }
+}
+
+int decryptStdStreamOnTheFly(unsigned int *key) {
+  unsigned char inputChunk[2 * sizeof(int)];
+  int status = 0;
+
+  bool stopLoop = false;
+  while(!stopLoop) {
+    unsigned char inputHex[2 * 2 * sizeof(int)];
+    for(int i = 0; i < 2 * 2 * sizeof(int); i++) {
+      if(scanf("%c", &inputHex[i]) == EOF) {
+        stopLoop = true;
+        if (i > 0) {
+          status = 1;
+          fprintf(stderr, "Error: Wrong chunk size. Ciphertext is\n");
+          fprintf(stderr, "       required to have a size equal to\n");
+          fprintf(stderr, "       a mutiple of %lu hexadecimal characters.\n", 2 * 2 * sizeof(int));
+        }
+        break;
+      }
+      if(!isHexChar(inputHex[i])) {
+        stopLoop = true;
+        status = 1;
+        fprintf(stderr, "Error: Ciphertext has to be written using\n");
+        fprintf(stderr, "       hexadecimal characters only.\n");
+        break;
+      }
+    }
+    if(!stopLoop) {
+      unsigned char hexBuffer[2 * sizeof(int) + 1];
+      hexBuffer[2 * sizeof(int)] = '\0';
+      unsigned int *parsedValues = malloc(2 * sizeof(int));
+      printf("DBG:");
+      for(int i = 0; i < 2; i++) {
+        // Copy the buffer to evaluate it as a hex
+        strncpy(hexBuffer, &inputHex[2 * sizeof(int) * i], 2 * sizeof(int));
+        sscanf(hexBuffer, "%08x", &parsedValues[i]);
+        printf(" %08x", parsedValues[i]);
+      }
+      printf("\n");
+      decryptTwoValues(parsedValues, key);
+      // TODO: Print as chars to 'stdout'.
+      printf("   :");
+      for(int i = 0; i < 2; i++) {
+        printf(" %08x", parsedValues[i]);
+      }
+      printf("\n");
+      free(parsedValues);
+    }
+  }
+  return status;
+}
+
 int main(int argc, char **argv) {
+  int status = 0;
   printBanner();
-  if(parseArgs(argc, argv)) {
-    return 1;
+  status = parseArgs(argc, argv);
+  if(status) {
+    return status;
   }
   unsigned int *key = parseKey(argv[2]);
   if(algorithmDirection == ENCODE) {
@@ -123,12 +199,10 @@ int main(int argc, char **argv) {
     encryptStdStreamOnTheFly(key);
   } else {
     fprintf(stderr, "Note: Decrypting...\n");
-    fprintf(stderr, "Error: Decrypting not implemented\n");
-    // TODO: Implement decryption
-    return 1;
+    status = decryptStdStreamOnTheFly(key);
   }
   fprintf(stderr, "Note: Finished!\n");
   cleanupKey(key);
-  return 0;
+  return status;
 }
 

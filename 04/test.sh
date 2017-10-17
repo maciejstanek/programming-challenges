@@ -23,9 +23,9 @@ for i in {1..3}; do
   echo
 
   echo -e "\e[${color}m --- decrypting --- \e[0m"
-  echo TODO
+  cat .encrypted | ./a.out decrypt ${key[$i]} > .decrypted
   echo -e "\e[${color}m --- plaintext --- \e[0m"
-  echo TODO
+  cat .decrypted
 
   echo -e "\e[${color}m --- finished --- \e[0m"
   echo
@@ -33,3 +33,6 @@ for i in {1..3}; do
   rm -f .decrypted
 done
 
+# TODO: Make these steps look nicer
+echo -n 1234567812345678X | ./a.out decrypt 1234567812345678
+echo -n 12345678123456781 | ./a.out decrypt 1234567812345678
