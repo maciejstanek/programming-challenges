@@ -31,10 +31,10 @@ void printBanner() {
 }
 
 void encryptTwoValues(unsigned int *value, unsigned int* key) {
-  // This is where raw encryption takes place.
   unsigned int sum = 0;
   unsigned int delta = 0x9e3779b9;
   for(int i = 0; i < 32; i++) {
+    sum += delta;
     value[0] += ((value[1] << 4) + key[0]) ^ (value[1] + sum) ^ ((value[1] >> 5) + key[1]);
     value[1] += ((value[0] << 4) + key[2]) ^ (value[0] + sum) ^ ((value[0] >> 5) + key[3]);
   }
@@ -125,13 +125,12 @@ bool isHexChar(unsigned char c) {
 }
 
 void decryptTwoValues(unsigned int *value, unsigned int* key) {
-  return; // TODO
-  // This is where raw encryption takes place.
-  unsigned int sum = 0;
+  unsigned int sum = 0xC6EF3720;
   unsigned int delta = 0x9e3779b9;
   for(int i = 0; i < 32; i++) {
-    value[0] += ((value[1] << 4) + key[0]) ^ (value[1] + sum) ^ ((value[1] >> 5) + key[1]);
-    value[1] += ((value[0] << 4) + key[2]) ^ (value[0] + sum) ^ ((value[0] >> 5) + key[3]);
+    value[1] -= ((value[0] << 4) + key[2]) ^ (value[0] + sum) ^ ((value[0] >> 5) + key[3]);
+    value[0] -= ((value[1] << 4) + key[0]) ^ (value[1] + sum) ^ ((value[1] >> 5) + key[1]);
+    sum -= delta;
   }
 }
 
@@ -165,21 +164,15 @@ int decryptStdStreamOnTheFly(unsigned int *key) {
       unsigned char hexBuffer[2 * sizeof(int) + 1];
       hexBuffer[2 * sizeof(int)] = '\0';
       unsigned int *parsedValues = malloc(2 * sizeof(int));
-      printf("DBG:");
       for(int i = 0; i < 2; i++) {
         // Copy the buffer to evaluate it as a hex
         strncpy(hexBuffer, &inputHex[2 * sizeof(int) * i], 2 * sizeof(int));
         sscanf(hexBuffer, "%08x", &parsedValues[i]);
-        printf(" %08x", parsedValues[i]);
       }
-      printf("\n");
       decryptTwoValues(parsedValues, key);
-      // TODO: Print as chars to 'stdout'.
-      printf("   :");
-      for(int i = 0; i < 2; i++) {
-        printf(" %08x", parsedValues[i]);
+      for(int i = 0; i < 2 * 2 * sizeof(int); i++) {
+        printf("%c", ((unsigned char*)parsedValues)[i]);
       }
-      printf("\n");
       free(parsedValues);
     }
   }

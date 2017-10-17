@@ -26,6 +26,7 @@ for i in {1..3}; do
   cat .encrypted | ./a.out decrypt ${key[$i]} > .decrypted
   echo -e "\e[${color}m --- plaintext --- \e[0m"
   cat .decrypted
+  echo
 
   echo -e "\e[${color}m --- finished --- \e[0m"
   echo
