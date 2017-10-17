@@ -1,39 +1,31 @@
 #!/bin/bash
 
-text[1]="This example has a too short key."
-key[1]="123456781234567"
-text[2]="1234567890"
-key[2]="a1b2c3d4e5f6g7h8"
-text[3]="Ala ma kota a sierotka ma rysia."
-key[3]="1234567812345678"
+function calculateColorForStep()  {
+  echo -n $((41 + $1 % 4))
+}
+function printStepBanner() {
+  color=$(calculateColorForStep $1)
+  echo -e "\n\e[${color};1m === CASE $1 === \e[0m\n"
+}
 
-for i in {1..3}; do
-  color=$((30 + $i % 4))
-  echo -e "\e[${color};1m === STEP $i === \e[0m"
+printStepBanner 0
+echo -n "This example has a too short key." | ./a.out 123 123 123 123 123 | cat
 
-  echo -e "\e[${color}m --- plaintext --- \e[0m"
-  echo ${text[$i]}
-  echo -e "\e[${color}m --- key --- \e[0m"
-  echo ${key[$i]}
+printStepBanner 1
+echo -n "This example has a too short key." | ./a.out encrypt 123456781234567 | cat
 
-  echo -e "\e[${color}m --- encrypting --- \e[0m"
-  echo -n ${text[$i]} | ./a.out encrypt ${key[$i]} > .encrypted
-  echo -e "\e[${color}m --- ciphertext --- \e[0m"
-  cat .encrypted
-  echo
+printStepBanner 2
+echo -n "Ala ma kota a sierotka ma rysia." | ./a.out encrypt my_128b_TSA_key_
 
-  echo -e "\e[${color}m --- decrypting --- \e[0m"
-  cat .encrypted | ./a.out decrypt ${key[$i]} > .decrypted
-  echo -e "\e[${color}m --- plaintext --- \e[0m"
-  cat .decrypted
-  echo
+printStepBanner 3
+echo -n "Ala ma kota a sierotka ma rysia." | ./a.out encrypt ThisIsTheSameKey 2>/dev/null | ./a.out decrypt ThisIsTheSameKey
 
-  echo -e "\e[${color}m --- finished --- \e[0m"
-  echo
-  rm -f .encrypted
-  rm -f .decrypted
-done
+printStepBanner 4
+echo -n "Ala ma kota a sierotka ma rysia." | ./a.out encrypt 1234567812345678 2>/dev/null | ./a.out decrypt abcdabcdabcdabcd
 
-# TODO: Make these steps look nicer
-echo -n 1234567812345678X | ./a.out decrypt 1234567812345678
-echo -n 12345678123456781 | ./a.out decrypt 1234567812345678
+printStepBanner 5
+echo -n 12345678X12345678 | ./a.out decrypt 1234567812345678 >/dev/null | cat
+
+printStepBanner 6
+echo -n 12345678123456781 | ./a.out decrypt 1234567812345678 >/dev/null | cat
+
