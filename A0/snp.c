@@ -2,30 +2,30 @@
 #include <stdio.h>
 
 void sqrseq(int pos, int *seq, int lim, int *sqr, int sqrn) {
-  int **nseql = (int**) malloc((lim - pos) * sizeof(int*));
-  for(int i = pos; i < lim; i++) {
-    nseql[i] = malloc(lim * sizeof(int));
-    for(int j = 0; j < pos; j++) {
-      nseql[i][j] = seq[j];
+  if(pos == lim) {
+    printf("SEQ");
+    for(int j = 0; j < lim; j++) {
+    printf(" (%d)", seq[j]);
     }
-    nseql[i][pos] = seq[i];
+    printf("\n");
+    free(seq);
+    return;
+  }
+  for(int i = pos; i < lim; i++) {
+    int *nseq = malloc(lim * sizeof(int));
+    for(int j = 0; j < pos; j++) {
+      nseq[j] = seq[j];
+    }
+    nseq[pos] = seq[i];
     int offset = -1;
     for(int j = pos + 1; j < lim; j++) {
       if(seq[i] == seq[j - 1])
         offset = 0;
-      nseql[i][j] = seq[j + offset];
+      nseq[j] = seq[j + offset];
     }
-    printf("SEQ");
-    for(int j = 0; j < lim; j++) {
-    printf(" (%d)", nseql[i][j]);
-    }
-    printf("\n");
+    sqrseq(pos + 1, nseq, lim, sqr, sqrn);
   }
   free(seq);
-  for(int i = pos; i < lim; i++) {
-    free(nseql[i]);
-  }
-  free(nseql);
 }
 
 int main(int argc, char **argv) {
