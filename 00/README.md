@@ -1,3 +1,8 @@
+Random Name Generator
+---------------------
+
+Example output:
+```
 Hello! My name is Vaeshashurmae.
 Hello! My name is Caitashezthu.
 Hello! My name is Boso.
@@ -15,3 +20,4 @@ Hello! My name is Kitovaisthai.
 Hello! My name is Pehaegterzouz.
 Hello! My name is Logaesmanvoh.
 Hello! My name is Faigtidu.
+```
