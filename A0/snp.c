@@ -4,9 +4,9 @@
 void sqrseq(int pos, int *seq, int lim, int *sqr, int sqrn, int *curmax) {
   if(pos > *curmax) {
     *curmax = pos;
-    printf("SEQ{%d}", pos);
+    printf("SEQ{%02d}:", pos);
     for(int j = 0; j < lim; j++) {
-    printf(" (%d)", seq[j]);
+    printf(" %02d", seq[j]);
     }
     printf("\n");
   }
