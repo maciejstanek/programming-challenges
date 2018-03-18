@@ -2,6 +2,7 @@
 #include <iostream>
 #include <iomanip>
 #include <functional>
+#include <cmath>
 
 using namespace std;
 
@@ -25,8 +26,10 @@ void mergeSort(vector<int>::iterator b, vector<int>::iterator e) {
 int main() {
   cout << "Modern C++11 merge sort." << endl;
   vector<int> v(20);
-  srand(time(0));
-  generate(v.begin(), v.end(), [](){return rand()%100;});
+  auto randomize = bind(
+    uniform_int_distribution<>{0, 99},
+    default_random_engine{});
+  generate(v.begin(), v.end(), randomize);
   printVector(v.begin(), v.end());
   mergeSort(v.begin(), v.end());
   printVector(v.begin(), v.end());
