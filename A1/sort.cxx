@@ -5,6 +5,7 @@
 
 void f(std::vector<int>& v) {
   // Fill this function so that the vector v will be sorted {{{
+  std::sort(v.begin(), v.end());
   // }}}
 }
  
