@@ -3,13 +3,13 @@
 using namespace std;
 
 template<int n>
-constexpr unsigned long factorial()
+constexpr long factorial()
 {
   return n*factorial<n-1>();
 }
 
 template<>
-constexpr unsigned long factorial<1>()
+constexpr long factorial<1>()
 {
   return 1;
 }
