@@ -9,12 +9,13 @@ constexpr long factorial()
 }
 
 template<>
-constexpr long factorial<1>()
+constexpr long factorial<0>()
 {
   return 1;
 }
 
 int main() {
+  cout << "factorial<0>()  == " << factorial<0>() << endl;
   cout << "factorial<1>()  == " << factorial<1>() << endl;
   cout << "factorial<2>()  == " << factorial<2>() << endl;
   cout << "factorial<3>()  == " << factorial<3>() << endl;
