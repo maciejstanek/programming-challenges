@@ -49,7 +49,7 @@
 * [ ] __2E__ _TBD_
 * [ ] __2F__ _TBD_
 * [ ] __30__ Cipher encryption/decryption tool
-   * Implement at least one of [Rumkin Collection](rumkin.com/tools/cipher)
+  * Implement at least one of [Rumkin Collection](http://rumkin.com/tools/cipher)
 * [ ] __31__ Blackjack
 * [ ] __32__ Dungeons & Dragons with AI
 * [ ] __33__ Generate ASCII tree
@@ -90,7 +90,7 @@
 * [ ] __56__ Mandelbrot set (+ other fractals)
 * [x] __57__ Sorting algorithms (+ visualisation)
 * [ ] __58__ Custom markup to HTML converter
-   * [N.B.](www.mjt.me.uk/posts/falsehoods-programmers-believe-about-addresses)
+  * [N.B.](https://www.mjt.me.uk/posts/falsehoods-programmers-believe-about-addresses)
 * [ ] __59__ N queens problem
 * [ ] __5A__ _TBD_
 * [ ] __5B__ _TBD_
@@ -206,9 +206,9 @@ Now that you have a reference implementation, you can go wild. Reimplement the t
 
 ## Generally Useful Resources
 
- * [Google](google.com)
- * [Wikipedia](en.wikipedia.org)
- * [Stack Overflow](stackoverflow.com)
+ * [Google](https://google.com)
+ * [Wikipedia](https://en.wikipedia.org)
+ * [Stack Overflow](https://stackoverflow.com)
 
 ## Literature
 
@@ -220,12 +220,12 @@ Now that you have a reference implementation, you can go wild. Reimplement the t
 
 ## See Also
 
- * [HackerRank](hackerrank.com)
- * [CodeChef](codechef.com)
- * [CodeFights](codefights.com)
- * [Project Euler](projecteuler.net)
- * [CTFfime](ctftime.org)
- * [Rosetta Code](rosettacode.org)
+ * [HackerRank](https://hackerrank.com)
+ * [CodeChef](https://codechef.com)
+ * [CodeFights](https://codefights.com)
+ * [Project Euler](https://projecteuler.net)
+ * [CTFfime](https://ctftime.org)
+ * [Rosetta Code](https://rosettacode.org)
 
 # Acknowledgments
 
