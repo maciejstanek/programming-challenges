@@ -1,183 +1,183 @@
-# Pro/g/ramming Challenges
+# Programming Challenges
 
-* [x] 00 Name generator (+ credentials)
-* [x] 01 Higher/lower, heads/tails
-* [x] 02 Temperature converter
-* [x] 03 Calculate age in seconds (with leap years)
-* [x] 04 Encryption/decryption algorithm
-* [x] 05 FizzBuzz
-* [ ] 06 Rock, paper, scissors (+ lizard, Spock)
-* [ ] 07 Project Euler (in every language you know)
-* [ ] 08 Hangman
-* [ ] 09 Love calculator
-* [ ] 0A /TBD/
-* [ ] 0B /TBD/
-* [ ] 0C /TBD/
-* [ ] 0D /TBD/
-* [ ] 0E /TBD/
-* [ ] 0F /TBD/
-* [ ] 10 Random sentence generator
-* [ ] 11 Password/passphrase generator
-* [ ] 12 Internet time ((S)NTP)
-* [ ] 13 Haiku generator
-* [ ] 14 Magic eight ball
-* [x] 15 Collatz conjecture
-* [ ] 16 Reverse a string
-* [ ] 17 Eulerian path
-* [ ] 18 Simple file explorer
-* [ ] 19 Count words in a string (lines, sentences, paragraphs, typos, &c.)
-* [ ] 1A /TBD/
-* [ ] 1B /TBD/
-* [ ] 1C /TBD/
-* [ ] 1D /TBD/
-* [ ] 1E /TBD/
-* [ ] 1F /TBD/
-* [ ] 20 Minesweeper
-* [ ] 21 Connect four
-* [ ] 22 BMI calculator
-* [ ] 23 4chan thread/image downloader
-* [ ] 24 Sudoku generator/solver
-* [ ] 25 Maze generator/solver (random graphs/trees)
-* [ ] 26 Radix (base) converter
-* [ ] 27 Picross solver
-* [ ] 28 Fibonacci sequence
-* [ ] 29 Factorial
-* [ ] 2A /TBD/
-* [ ] 2B /TBD/
-* [ ] 2C /TBD/
-* [ ] 2D /TBD/
-* [ ] 2E /TBD/
-* [ ] 2F /TBD/
-* [ ] 30 Cipher encryption/decryption tool
-   * Implement at least one of Rumkin Collection: rumkin.com/tools/cipher
-* [ ] 31 Blackjack
-* [ ] 32 Dungeons & Dragons with AI
-* [ ] 33 Generate ASCII tree
-* [ ] 34 Genetic algorithms on polygons
-* [ ] 35 Benford's law
-* [ ] 36 Currency converter (+ various units, comodities, etc.; + history)
-* [ ] 37 Static website generator
-* [ ] 38 Crossword game
-* [ ] 39 Scientific calculator (CLI or GUI)
-* [ ] 3A /TBD/
-* [ ] 3B /TBD/
-* [ ] 3C /TBD/
-* [ ] 3D /TBD/
-* [ ] 3E /TBD/
-* [ ] 3F /TBD/
-* [ ] 40 Perlin noise
-* [ ] 41 Image viewer
-* [ ] 42 ASCII digital clock
-* [ ] 43 Dijkstra's algorithm
-* [ ] 44 Text/Morse code translator (+ sound)
-* [ ] 45 Tic-tac-toe
-* [ ] 46 Snake game
-* [ ] 47 FTP client (+ server)
-* [ ] 48 Telnet server (+ client, netctat clone?)
-* [ ] 49 IMP interpreter
-* [ ] 4A /TBD/
-* [ ] 4B /TBD/
-* [ ] 4C /TBD/
-* [ ] 4D /TBD/
-* [ ] 4E /TBD/
-* [ ] 4F /TBD/
-* [ ] 50 Tetris
-* [ ] 51 Conway's Game of Life (other cell. automata)
-* [ ] 52 Web crawler
-* [ ] 53 Text editor
-* [ ] 54 RSS feed reader
-* [ ] 55 RPN calculator
-* [ ] 56 Mandelbrot set (+ other fractals)
-* [x] 57 Sorting algorithms (+ visualisation)
-* [ ] 58 Custom markup to HTML converter
-   * N.B.: www.mjt.me.uk/posts/falsehoods-programmers-believe-about-addresses/
-* [ ] 59 N queens problem
-* [ ] 5A /TBD/
-* [ ] 5B /TBD/
-* [ ] 5C /TBD/
-* [ ] 5D /TBD/
-* [ ] 5E /TBD/
-* [ ] 5F /TBD/
-* [ ] 60 Flow in a network (Ford-Fulkerson algo.)
-* [ ] 61 Credential validator (phone, email, &c.)
-* [ ] 62 Linked list (single, double)
-* [ ] 63 Mastermind
-* [ ] 64 Random image generator (parametric)
-* [ ] 65 Ulam spiral
-* [ ] 66 Klingon translator
-* [ ] 67 Prime number generator using a sieve
-* [ ] 68 Markov chains (random text generation)
-* [ ] 69 Graphical analog clock
-* [ ] 6A /TBD/
-* [ ] 6B /TBD/
-* [ ] 6C /TBD/
-* [ ] 6D /TBD/
-* [ ] 6E /TBD/
-* [ ] 6F /TBD/
-* [ ] 70 Two languages communicating with each other (C++ & Java, Lisp & Python, &c.)
-* [ ] 71 Triangle number calculator
-* [ ] 72 Typing speed calculator
-* [ ] 73 Name art in ASCII
-* [ ] 74 Towers of Hanoi (more disks, more poles)
-* [ ] 75 Quine
-* [ ] 76 IRC bot
-* [ ] 77 Brainfuck interpreter (+ optimization, multiple targets)
-* [ ] 78 Knight's tour
-* [ ] 79 Chip-8 emulator
-* [ ] 7A /TBD/
-* [ ] 7B /TBD/
-* [ ] 7C /TBD/
-* [ ] 7D /TBD/
-* [ ] 7E /TBD/
-* [ ] 7F /TBD/
-* [ ] 80 Geekcode generator (3.12)
-* [ ] 81 Define, translate & rotate a polygon (+ other affine transformations)
-* [ ] 82 Pong with variable vectors
-* [ ] 83 Battleships with AI
-* [ ] 84 Simple paint program
-* [ ] 85 TCP chat with basic encryption
-* [ ] 86 Incremental economy simulator (a la Time of Exploration)
-* [ ] 87 Encrypting data in images (steganography)
-* [x] 88 Pascal's triangle
-* [ ] 89 Sine wave generator from pseudorandom numbers
-* [ ] 8A /TBD/
-* [ ] 8B /TBD/
-* [ ] 8C /TBD/
-* [ ] 8D /TBD/
-* [ ] 8E /TBD/
-* [ ] 8F /TBD/
-* [ ] 90 Flappy Bird
-* [ ] 91 Fourier transform (fast or 'slow'; + visualisation)
-* [ ] 92 Method ringing simulator
-* [ ] 93 Binary search (n-ary)
-* [ ] 94 Nintendo Oil Panic
-* [ ] 95 Sierpiriski triangle
-* [ ] 96 Dot & cross product of two vectors (exterior product)
-* [ ] 97 Little Man computer simulation
-* [ ] 98 Lisp interpreter
-* [ ] 99 Enigma simulator with a configuration file (+ decrypt messages without known settings)
-* [ ] 9A /TBD/
-* [ ] 9B /TBD/
-* [ ] 9C /TBD/
-* [ ] 9D /TBD/
-* [ ] 9E /TBD/
-* [ ] 9F /TBD/
-* [x] A0 The Square-Sum Problem
-* [ ] A1 /TBD/
-* [x] A2 Compile time calculations
-* [ ] A3 /TBD/
-* [ ] A4 /TBD/
-* [ ] A5 /TBD/
-* [ ] A6 /TBD/
-* [ ] A7 /TBD/
-* [ ] A8 /TBD/
-* [ ] A9 /TBD/
-* [ ] AA /TBD/
-* [ ] AB /TBD/
-* [ ] AC /TBD/
-* [ ] AD /TBD/
-* [ ] AE /TBD/
-* [ ] AF /TBD/
+* [x] __00__ Name generator (+ credentials)
+* [x] __01__ Higher/lower, heads/tails
+* [x] __02__ Temperature converter
+* [x] __03__ Calculate age in seconds (with leap years)
+* [x] __04__ Encryption/decryption algorithm
+* [x] __05__ FizzBuzz
+* [ ] __06__ Rock, paper, scissors (+ lizard, Spock)
+* [ ] __07__ Project Euler (in every language you know)
+* [ ] __08__ Hangman
+* [ ] __09__ Love calculator
+* [ ] __0A__ _TBD_
+* [ ] __0B__ _TBD_
+* [ ] __0C__ _TBD_
+* [ ] __0D__ _TBD_
+* [ ] __0E__ _TBD_
+* [ ] __0F__ _TBD_
+* [ ] __10__ Random sentence generator
+* [ ] __11__ Password/passphrase generator
+* [ ] __12__ Internet time ((S)NTP)
+* [ ] __13__ Haiku generator
+* [ ] __14__ Magic eight ball
+* [x] __15__ Collatz conjecture
+* [ ] __16__ Reverse a string
+* [ ] __17__ Eulerian path
+* [ ] __18__ Simple file explorer
+* [ ] __19__ Count words in a string (lines, sentences, paragraphs, typos, &c.)
+* [ ] __1A__ _TBD_
+* [ ] __1B__ _TBD_
+* [ ] __1C__ _TBD_
+* [ ] __1D__ _TBD_
+* [ ] __1E__ _TBD_
+* [ ] __1F__ _TBD_
+* [ ] __20__ Minesweeper
+* [ ] __21__ Connect four
+* [ ] __22__ BMI calculator
+* [ ] __23__ 4chan thread/image downloader
+* [ ] __24__ Sudoku generator/solver
+* [ ] __25__ Maze generator/solver (random graphs/trees)
+* [ ] __26__ Radix (base) converter
+* [ ] __27__ Picross solver
+* [ ] __28__ Fibonacci sequence
+* [ ] __29__ Factorial
+* [ ] __2A__ _TBD_
+* [ ] __2B__ _TBD_
+* [ ] __2C__ _TBD_
+* [ ] __2D__ _TBD_
+* [ ] __2E__ _TBD_
+* [ ] __2F__ _TBD_
+* [ ] __30__ Cipher encryption/decryption tool
+   * Implement at least one of [Rumkin Collection](rumkin.com/tools/cipher)
+* [ ] __31__ Blackjack
+* [ ] __32__ Dungeons & Dragons with AI
+* [ ] __33__ Generate ASCII tree
+* [ ] __34__ Genetic algorithms on polygons
+* [ ] __35__ Benford's law
+* [ ] __36__ Currency converter (+ various units, comodities, etc.; + history)
+* [ ] __37__ Static website generator
+* [ ] __38__ Crossword game
+* [ ] __39__ Scientific calculator (CLI or GUI)
+* [ ] __3A__ _TBD_
+* [ ] __3B__ _TBD_
+* [ ] __3C__ _TBD_
+* [ ] __3D__ _TBD_
+* [ ] __3E__ _TBD_
+* [ ] __3F__ _TBD_
+* [ ] __40__ Perlin noise
+* [ ] __41__ Image viewer
+* [ ] __42__ ASCII digital clock
+* [ ] __43__ Dijkstra's algorithm
+* [ ] __44__ Text/Morse code translator (+ sound)
+* [ ] __45__ Tic-tac-toe
+* [ ] __46__ Snake game
+* [ ] __47__ FTP client (+ server)
+* [ ] __48__ Telnet server (+ client, netctat clone?)
+* [ ] __49__ IMP interpreter
+* [ ] __4A__ _TBD_
+* [ ] __4B__ _TBD_
+* [ ] __4C__ _TBD_
+* [ ] __4D__ _TBD_
+* [ ] __4E__ _TBD_
+* [ ] __4F__ _TBD_
+* [ ] __50__ Tetris
+* [ ] __51__ Conway's Game of Life (other cell. automata)
+* [ ] __52__ Web crawler
+* [ ] __53__ Text editor
+* [ ] __54__ RSS feed reader
+* [ ] __55__ RPN calculator
+* [ ] __56__ Mandelbrot set (+ other fractals)
+* [x] __57__ Sorting algorithms (+ visualisation)
+* [ ] __58__ Custom markup to HTML converter
+   * [N.B.](www.mjt.me.uk/posts/falsehoods-programmers-believe-about-addresses)
+* [ ] __59__ N queens problem
+* [ ] __5A__ _TBD_
+* [ ] __5B__ _TBD_
+* [ ] __5C__ _TBD_
+* [ ] __5D__ _TBD_
+* [ ] __5E__ _TBD_
+* [ ] __5F__ _TBD_
+* [ ] __60__ Flow in a network (Ford-Fulkerson algo.)
+* [ ] __61__ Credential validator (phone, email, &c.)
+* [ ] __62__ Linked list (single, double)
+* [ ] __63__ Mastermind
+* [ ] __64__ Random image generator (parametric)
+* [ ] __65__ Ulam spiral
+* [ ] __66__ Klingon translator
+* [ ] __67__ Prime number generator using a sieve
+* [ ] __68__ Markov chains (random text generation)
+* [ ] __69__ Graphical analog clock
+* [ ] __6A__ _TBD_
+* [ ] __6B__ _TBD_
+* [ ] __6C__ _TBD_
+* [ ] __6D__ _TBD_
+* [ ] __6E__ _TBD_
+* [ ] __6F__ _TBD_
+* [ ] __70__ Two languages communicating with each other (C++ & Java, Lisp & Python, &c.)
+* [ ] __71__ Triangle number calculator
+* [ ] __72__ Typing speed calculator
+* [ ] __73__ Name art in ASCII
+* [ ] __74__ Towers of Hanoi (more disks, more poles)
+* [ ] __75__ Quine
+* [ ] __76__ IRC bot
+* [ ] __77__ Brainfuck interpreter (+ optimization, multiple targets)
+* [ ] __78__ Knight's tour
+* [ ] __79__ Chip-8 emulator
+* [ ] __7A__ _TBD_
+* [ ] __7B__ _TBD_
+* [ ] __7C__ _TBD_
+* [ ] __7D__ _TBD_
+* [ ] __7E__ _TBD_
+* [ ] __7F__ _TBD_
+* [ ] __80__ Geekcode generator (3.12)
+* [ ] __81__ Define, translate & rotate a polygon (+ other affine transformations)
+* [ ] __82__ Pong with variable vectors
+* [ ] __83__ Battleships with AI
+* [ ] __84__ Simple paint program
+* [ ] __85__ TCP chat with basic encryption
+* [ ] __86__ Incremental economy simulator (a la Time of Exploration)
+* [ ] __87__ Encrypting data in images (steganography)
+* [x] __88__ Pascal's triangle
+* [ ] __89__ Sine wave generator from pseudorandom numbers
+* [ ] __8A__ _TBD_
+* [ ] __8B__ _TBD_
+* [ ] __8C__ _TBD_
+* [ ] __8D__ _TBD_
+* [ ] __8E__ _TBD_
+* [ ] __8F__ _TBD_
+* [ ] __90__ Flappy Bird
+* [ ] __91__ Fourier transform (fast or 'slow'; + visualisation)
+* [ ] __92__ Method ringing simulator
+* [ ] __93__ Binary search (n-ary)
+* [ ] __94__ Nintendo Oil Panic
+* [ ] __95__ Sierpiriski triangle
+* [ ] __96__ Dot & cross product of two vectors (exterior product)
+* [ ] __97__ Little Man computer simulation
+* [ ] __98__ Lisp interpreter
+* [ ] __99__ Enigma simulator with a configuration file (+ decrypt messages without known settings)
+* [ ] __9A__ _TBD_
+* [ ] __9B__ _TBD_
+* [ ] __9C__ _TBD_
+* [ ] __9D__ _TBD_
+* [ ] __9E__ _TBD_
+* [ ] __9F__ _TBD_
+* [x] __A0__ The Square-Sum Problem
+* [ ] __A1__ _TBD_
+* [x] __A2__ Compile time calculations
+* [ ] __A3__ _TBD_
+* [ ] __A4__ _TBD_
+* [ ] __A5__ _TBD_
+* [ ] __A6__ _TBD_
+* [ ] __A7__ _TBD_
+* [ ] __A8__ _TBD_
+* [ ] __A9__ _TBD_
+* [ ] __AA__ _TBD_
+* [ ] __AB__ _TBD_
+* [ ] __AC__ _TBD_
+* [ ] __AD__ _TBD_
+* [ ] __AE__ _TBD_
+* [ ] __AF__ _TBD_
 * ...
 
 # A concise how-to guide
@@ -206,26 +206,28 @@ Now that you have a reference implementation, you can go wild. Reimplement the t
 
 ## Generally Useful Resources
 
-Google, Wikipedia, Stack Overflow
+ * [Google](google.com)
+ * [Wikipedia](en.wikipedia.org)
+ * [Stack Overflow](stackoverflow.com)
 
 ## Literature
 
- * Knuth: The Art of Computer Programming "TAOCP"
- * Skiena: The Algorithm Design Manual Cormen et al.: Introduction to Algorithms "CLR(S)"
- * Russell, Norvig: Artificial Intelligence: A Modern Approach
- * Abelson, Sussman: Structure and Interpretation of Computer Programs "SICP"
+ * Knuth: _The Art of Computer Programming_ __TAOCP"__
+ * Skiena: _The Algorithm Design Manual_
+ * Cormen et al.: _Introduction to Algorithms_ __CLR(S)__
+ * Russell, Norvig: _Artificial Intelligence: A Modern Approach_
+ * Abelson, Sussman: _Structure and Interpretation of Computer Programs_ __SICP__
 
-## See also:
+## See Also
 
- * hackerrank.com
- * codechef.com
- * codefights.com
- * projecteuler.net
- * ctftime.org
- * rosettacode.org
+ * [HackerRank](hackerrank.com)
+ * [CodeChef](codechef.com)
+ * [CodeFights](codefights.com)
+ * [Project Euler](projecteuler.net)
+ * [CTFfime](ctftime.org)
+ * [Rosetta Code](rosettacode.org)
 
 # Acknowledgments
 
-Based on Pro/g/ramming Challenges v1.4 epsilon by Anonymous in January 2015
-
-Updated by Maciej Stanek in May 2021
+ * Created as _Pro/g/ramming Challenges v1.4 epsilon_ by Anonymous in January 2015
+ * Updated by Maciej Stanek in May 2021
