@@ -10,12 +10,12 @@
 * :white_circle: __07__ Project Euler (in every language you know)
 * :white_circle: __08__ Hangman
 * :white_circle: __09__ Love calculator
-* :blue_circle: __0A__ _TBD_
-* :blue_circle: __0B__ _TBD_
-* :blue_circle: __0C__ _TBD_
-* :blue_circle: __0D__ _TBD_
-* :blue_circle: __0E__ _TBD_
-* :blue_circle: __0F__ _TBD_
+* :large_blue_circle: __0A__ _TBD_
+* :large_blue_circle: __0B__ _TBD_
+* :large_blue_circle: __0C__ _TBD_
+* :large_blue_circle: __0D__ _TBD_
+* :large_blue_circle: __0E__ _TBD_
+* :large_blue_circle: __0F__ _TBD_
 * :white_circle: __10__ Random sentence generator
 * :white_circle: __11__ Password/passphrase generator
 * :white_circle: __12__ Internet time ((S)NTP)
@@ -26,12 +26,12 @@
 * :white_circle: __17__ Eulerian path
 * :white_circle: __18__ Simple file explorer
 * :white_circle: __19__ Count words in a string (lines, sentences, paragraphs, typos, &c.)
-* :blue_circle: __1A__ _TBD_
-* :blue_circle: __1B__ _TBD_
-* :blue_circle: __1C__ _TBD_
-* :blue_circle: __1D__ _TBD_
-* :blue_circle: __1E__ _TBD_
-* :blue_circle: __1F__ _TBD_
+* :large_blue_circle: __1A__ _TBD_
+* :large_blue_circle: __1B__ _TBD_
+* :large_blue_circle: __1C__ _TBD_
+* :large_blue_circle: __1D__ _TBD_
+* :large_blue_circle: __1E__ _TBD_
+* :large_blue_circle: __1F__ _TBD_
 * :white_circle: __20__ Minesweeper
 * :white_circle: __21__ Connect four
 * :white_circle: __22__ BMI calculator
@@ -42,12 +42,12 @@
 * :white_circle: __27__ Picross solver
 * :white_circle: __28__ Fibonacci sequence
 * :white_circle: __29__ Factorial
-* :blue_circle: __2A__ _TBD_
-* :blue_circle: __2B__ _TBD_
-* :blue_circle: __2C__ _TBD_
-* :blue_circle: __2D__ _TBD_
-* :blue_circle: __2E__ _TBD_
-* :blue_circle: __2F__ _TBD_
+* :large_blue_circle: __2A__ _TBD_
+* :large_blue_circle: __2B__ _TBD_
+* :large_blue_circle: __2C__ _TBD_
+* :large_blue_circle: __2D__ _TBD_
+* :large_blue_circle: __2E__ _TBD_
+* :large_blue_circle: __2F__ _TBD_
 * :white_circle: __30__ Cipher encryption/decryption tool
   * Implement at least one of [Rumkin Collection](http://rumkin.com/tools/cipher)
 * :white_circle: __31__ Blackjack
@@ -59,12 +59,12 @@
 * :white_circle: __37__ Static website generator
 * :white_circle: __38__ Crossword game
 * :white_circle: __39__ Scientific calculator (CLI or GUI)
-* :blue_circle: __3A__ _TBD_
-* :blue_circle: __3B__ _TBD_
-* :blue_circle: __3C__ _TBD_
-* :blue_circle: __3D__ _TBD_
-* :blue_circle: __3E__ _TBD_
-* :blue_circle: __3F__ _TBD_
+* :large_blue_circle: __3A__ _TBD_
+* :large_blue_circle: __3B__ _TBD_
+* :large_blue_circle: __3C__ _TBD_
+* :large_blue_circle: __3D__ _TBD_
+* :large_blue_circle: __3E__ _TBD_
+* :large_blue_circle: __3F__ _TBD_
 * :white_circle: __40__ Perlin noise
 * :white_circle: __41__ Image viewer
 * :white_circle: __42__ ASCII digital clock
@@ -75,12 +75,12 @@
 * :white_circle: __47__ FTP client (+ server)
 * :white_circle: __48__ Telnet server (+ client, netctat clone?)
 * :white_circle: __49__ IMP interpreter
-* :blue_circle: __4A__ _TBD_
-* :blue_circle: __4B__ _TBD_
-* :blue_circle: __4C__ _TBD_
-* :blue_circle: __4D__ _TBD_
-* :blue_circle: __4E__ _TBD_
-* :blue_circle: __4F__ _TBD_
+* :large_blue_circle: __4A__ _TBD_
+* :large_blue_circle: __4B__ _TBD_
+* :large_blue_circle: __4C__ _TBD_
+* :large_blue_circle: __4D__ _TBD_
+* :large_blue_circle: __4E__ _TBD_
+* :large_blue_circle: __4F__ _TBD_
 * :white_circle: __50__ Tetris
 * :white_circle: __51__ Conway's Game of Life (other cell. automata)
 * :white_circle: __52__ Web crawler
@@ -92,12 +92,12 @@
 * :white_circle: __58__ Custom markup to HTML converter
   * [N.B.](https://www.mjt.me.uk/posts/falsehoods-programmers-believe-about-addresses)
 * :white_circle: __59__ N queens problem
-* :blue_circle: __5A__ _TBD_
-* :blue_circle: __5B__ _TBD_
-* :blue_circle: __5C__ _TBD_
-* :blue_circle: __5D__ _TBD_
-* :blue_circle: __5E__ _TBD_
-* :blue_circle: __5F__ _TBD_
+* :large_blue_circle: __5A__ _TBD_
+* :large_blue_circle: __5B__ _TBD_
+* :large_blue_circle: __5C__ _TBD_
+* :large_blue_circle: __5D__ _TBD_
+* :large_blue_circle: __5E__ _TBD_
+* :large_blue_circle: __5F__ _TBD_
 * :white_circle: __60__ Flow in a network (Ford-Fulkerson algo.)
 * :white_circle: __61__ Credential validator (phone, email, &c.)
 * :white_circle: __62__ Linked list (single, double)
@@ -108,12 +108,12 @@
 * :white_circle: __67__ Prime number generator using a sieve
 * :white_circle: __68__ Markov chains (random text generation)
 * :white_circle: __69__ Graphical analog clock
-* :blue_circle: __6A__ _TBD_
-* :blue_circle: __6B__ _TBD_
-* :blue_circle: __6C__ _TBD_
-* :blue_circle: __6D__ _TBD_
-* :blue_circle: __6E__ _TBD_
-* :blue_circle: __6F__ _TBD_
+* :large_blue_circle: __6A__ _TBD_
+* :large_blue_circle: __6B__ _TBD_
+* :large_blue_circle: __6C__ _TBD_
+* :large_blue_circle: __6D__ _TBD_
+* :large_blue_circle: __6E__ _TBD_
+* :large_blue_circle: __6F__ _TBD_
 * :white_circle: __70__ Two languages communicating with each other (C++ & Java, Lisp & Python, &c.)
 * :white_circle: __71__ Triangle number calculator
 * :white_circle: __72__ Typing speed calculator
@@ -124,12 +124,12 @@
 * :white_circle: __77__ Brainfuck interpreter (+ optimization, multiple targets)
 * :white_circle: __78__ Knight's tour
 * :white_circle: __79__ Chip-8 emulator
-* :blue_circle: __7A__ _TBD_
-* :blue_circle: __7B__ _TBD_
-* :blue_circle: __7C__ _TBD_
-* :blue_circle: __7D__ _TBD_
-* :blue_circle: __7E__ _TBD_
-* :blue_circle: __7F__ _TBD_
+* :large_blue_circle: __7A__ _TBD_
+* :large_blue_circle: __7B__ _TBD_
+* :large_blue_circle: __7C__ _TBD_
+* :large_blue_circle: __7D__ _TBD_
+* :large_blue_circle: __7E__ _TBD_
+* :large_blue_circle: __7F__ _TBD_
 * :white_circle: __80__ Geekcode generator (3.12)
 * :white_circle: __81__ Define, translate & rotate a polygon (+ other affine transformations)
 * :white_circle: __82__ Pong with variable vectors
@@ -140,12 +140,12 @@
 * :white_circle: __87__ Encrypting data in images (steganography)
 * :red_circle: __88__ Pascal's triangle
 * :white_circle: __89__ Sine wave generator from pseudorandom numbers
-* :blue_circle: __8A__ _TBD_
-* :blue_circle: __8B__ _TBD_
-* :blue_circle: __8C__ _TBD_
-* :blue_circle: __8D__ _TBD_
-* :blue_circle: __8E__ _TBD_
-* :blue_circle: __8F__ _TBD_
+* :large_blue_circle: __8A__ _TBD_
+* :large_blue_circle: __8B__ _TBD_
+* :large_blue_circle: __8C__ _TBD_
+* :large_blue_circle: __8D__ _TBD_
+* :large_blue_circle: __8E__ _TBD_
+* :large_blue_circle: __8F__ _TBD_
 * :white_circle: __90__ Flappy Bird
 * :white_circle: __91__ Fourier transform (fast or 'slow'; + visualisation)
 * :white_circle: __92__ Method ringing simulator
@@ -156,33 +156,33 @@
 * :white_circle: __97__ Little Man computer simulation
 * :white_circle: __98__ Lisp interpreter
 * :white_circle: __99__ Enigma simulator with a configuration file (+ decrypt messages without known settings)
-* :blue_circle: __9A__ _TBD_
-* :blue_circle: __9B__ _TBD_
-* :blue_circle: __9C__ _TBD_
-* :blue_circle: __9D__ _TBD_
-* :blue_circle: __9E__ _TBD_
-* :blue_circle: __9F__ _TBD_
+* :large_blue_circle: __9A__ _TBD_
+* :large_blue_circle: __9B__ _TBD_
+* :large_blue_circle: __9C__ _TBD_
+* :large_blue_circle: __9D__ _TBD_
+* :large_blue_circle: __9E__ _TBD_
+* :large_blue_circle: __9F__ _TBD_
 * :red_circle: __A0__ The Square-Sum Problem
-* :blue_circle: __A1__ _TBD_
+* :large_blue_circle: __A1__ _TBD_
 * :red_circle: __A2__ Compile time calculations
-* :blue_circle: __A3__ _TBD_
-* :blue_circle: __A4__ _TBD_
-* :blue_circle: __A5__ _TBD_
-* :blue_circle: __A6__ _TBD_
-* :blue_circle: __A7__ _TBD_
-* :blue_circle: __A8__ _TBD_
-* :blue_circle: __A9__ _TBD_
-* :blue_circle: __AA__ _TBD_
-* :blue_circle: __AB__ _TBD_
-* :blue_circle: __AC__ _TBD_
-* :blue_circle: __AD__ _TBD_
-* :blue_circle: __AE__ _TBD_
-* :blue_circle: __AF__ _TBD_
+* :large_blue_circle: __A3__ _TBD_
+* :large_blue_circle: __A4__ _TBD_
+* :large_blue_circle: __A5__ _TBD_
+* :large_blue_circle: __A6__ _TBD_
+* :large_blue_circle: __A7__ _TBD_
+* :large_blue_circle: __A8__ _TBD_
+* :large_blue_circle: __A9__ _TBD_
+* :large_blue_circle: __AA__ _TBD_
+* :large_blue_circle: __AB__ _TBD_
+* :large_blue_circle: __AC__ _TBD_
+* :large_blue_circle: __AD__ _TBD_
+* :large_blue_circle: __AE__ _TBD_
+* :large_blue_circle: __AF__ _TBD_
 
 Symbols:
 * :red_circle: Done
 * :white_circle: Open
-* :blue_circle: Undefined
+* :large_blue_circle: Undefined
 
 # A concise how-to guide
 
